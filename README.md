@@ -8,18 +8,26 @@ Esta es una herramienta de línea de comandos desarrollada en Python que te perm
 - Pip (administrador de paquetes de Python)
 
 ## Instalación
-
-Instala las dependencias necesarias utilizando el archivo `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
+Descargar el repositorio de Github:
+```
+git clone https://github.com/Noxwerlock08/Python-Scanner.git
 ```
 
-Uso
+Dale el permiso a los archivos:
+```bash
+chmod +x *
+```
+
+Instala las dependencias necesarias ejecutando el archivo `install.sh`
+```bash
+./install.sh
+```
+
+## Uso
 Ejecuta el código desde la línea de comandos siguiendo las instrucciones a continuación:
 
 ```bash
-python scan_ips.py <network_cidr> [--start_ip <start_ip>] [--end_ip <end_ip>] [--output_file <output_file>] [--detect_active] [--interface <interface>] [--scan_ports <ip:ports>]
+python3 main.py <network_cidr> [--start_ip <start_ip>] [--end_ip <end_ip>] [--output_file <output_file>] [--detect_active] [--interface <interface>] [--scan_ports <ip:ports>]
 ```
 
 Opciones Obligatorias
@@ -37,18 +45,18 @@ Ejemplos de Uso
 * Escanear IPs en la red 192.168.1.0/24 y guardar los resultados en un archivo CSV:
 
 ```bash
-python scan_ips.py 192.168.1.0/24 --output_file results.csv
+python3 main.py 192.168.1.0/24 --output_file results.csv
 ```
 
 Detectar dispositivos activos en la red:
 ```bash
-python scan_ips.py 192.168.1.0/24 --detect_active
+python3 main.py 192.168.1.0/24 --detect_active
 ```
 
 Escanear puertos abiertos en una IP específica:
 
 ```bash
-python scan_ips.py 192.168.1.100 --scan_ports 192.168.1.100:80,443
+python3 main.py 192.168.1.100 --scan_ports 192.168.1.100:80,443
 ```
 
 Notas Importantes
