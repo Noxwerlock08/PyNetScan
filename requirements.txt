@@ -1,0 +1,5 @@
+ipaddress
+argparse
+scapy
+python-nmap
+colorama
