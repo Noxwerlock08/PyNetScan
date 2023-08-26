@@ -8,7 +8,7 @@ Esta es una herramienta de línea de comandos desarrollada en Python que te perm
 - Pip (administrador de paquetes de Python)
 
 ## Instalación
-Descargar el repositorio de Github:
+Clona el repositorio de Github:
 ```
 git clone https://github.com/Noxwerlock08/Python-Scanner.git
 ```
